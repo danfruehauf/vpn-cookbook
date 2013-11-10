@@ -19,7 +19,8 @@ Vagrant.configure("2") do |config|
     #}
 
     chef.run_list = [
-      "recipe[vpn::openssh]"
+      "recipe[vpn::openssh]",
+      "recipe[vpn::nat]"
     ]
   end
 end

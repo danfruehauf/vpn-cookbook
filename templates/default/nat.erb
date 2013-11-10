@@ -1,0 +1,10 @@
+# NAT
+-A FWR -i tun+ -j ACCEPT
+-A FWR -i tap+ -j ACCEPT
+-A FWR -i ppp+ -j ACCEPT
+
+-A FORWARD -i tun+ -j ACCEPT
+-A FORWARD -i tap+ -j ACCEPT
+-A FORWARD -i ppp+ -j ACCEPT
+
+#-A POSTROUTING -o eth0 -j MASQUERADE
