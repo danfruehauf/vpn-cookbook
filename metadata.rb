@@ -10,4 +10,5 @@ version          '0.1.0'
   depends cookbook
 end
 
+recipe "vpn::nat",     "Installs NAT rules for VPN servers"
 recipe "vpn::openssh", "Installs an OpenSSH VPN server"

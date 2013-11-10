@@ -11,6 +11,15 @@ Not much, just a Linux (or Linux like) system.
 
 Attributes
 ----------
+#### vpn::nat
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Description</th>
+    <th>Default</th>
+  </tr>
+</table>
 
 #### vpn::openssh
 <table>
@@ -24,6 +33,11 @@ Attributes
 
 Usage
 -----
+#### vpn::nat
+```
+include_recipe "vpn::nat"
+```
+
 #### vpn::openssh
 ```
 include_recipe "vpn::openssh"
