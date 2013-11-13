@@ -21,3 +21,5 @@
 
 include_recipe "yum::epel"
 include_recipe "openvpn::default"
+
+iptables_rule "openvpn"

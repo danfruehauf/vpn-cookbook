@@ -20,7 +20,8 @@
 #
 
 include_recipe "openssh::default"
-include_recipe "openssh::iptables"
 
 node.set['openssh']['server']['permit_root_login'] = 'yes'
 node.set['openssh']['server']['permit_tunnel']     = 'yes'
+
+iptables_rule "openssh"
