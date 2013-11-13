@@ -12,17 +12,18 @@ Vagrant.configure("2") do |config|
 
     chef.json = {
       :openvpn => {
-        :routes => [],
+        :proto   => 'tcp',
+        :routes  => [],
         :gateway => "vpn.example.com",
-        :subnet => "10.8.0.0",
+        :subnet  => "10.8.0.0",
         :netmask => "255.255.0.0",
-        :key => {
-          :size => 2048,
-          :country => "US",
+        :key     => {
+          :size     => 2048,
+          :country  => "US",
           :province => "CA",
-          :city => "SanFrancisco",
-          :org => "Fort-Funston",
-          :email => "me@example.com"
+          :city     => "SanFrancisco",
+          :org      => "Fort-Funston",
+          :email    => "me@example.com"
         }
       }
     }
